@@ -74,9 +74,9 @@ const removeDuplicates = (arr) => {
  */
 const printTheory = () => {
     console.log(`\nTeoria ${countTheory}`)
-    console.log(`Suspeito: (${suspect+1}) ${suspects[suspect]}`)
-    console.log(`arma:  (${gun+1}) ${guns[gun]}`)
-    console.log(`local:  (${place+1}) ${places[place]}`)
+    console.log(`[1] Suspeito -> (${suspect+1}) ${suspects[suspect]}`)
+    console.log(`[2] Arma     -> (${gun+1}) ${guns[gun]}`)
+    console.log(`[3] Local:   -> (${place+1}) ${places[place]}`)
 }
 
 
@@ -104,11 +104,11 @@ rl.on('line', function (line) {
         console.log(`Crime Solucionado \\o/`)
         printTheory();
         console.log('*************************************************************************')
-
         process.exit(1)
     }
     // se condição satisfaz, uma nova teoria sera gerada!
     if(options.includes(1) || options.includes(2) || options.includes(3)) {
+        console.log(`[${options}], gerando nova teoria...`)
         countTheory ++;
     }
     // descartando opções

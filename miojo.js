@@ -102,6 +102,9 @@ if(checkTime >= MAX_ATTEMPTS){
     process.exit(1)
 }
 // imprime o relatorio final ao usuario
-console.log('tempo total: ', totalTime);
-console.log('tempo de cozimento: ', checkTime);
-console.log('iterações necessarias: ', count)
+console.log('\nRelatório final\n');
+console.log(`Tempo Ampulheta 1:     ${amp1} minutos`);
+console.log(`Tempo Ampulheta 2:     ${amp2} minutos`);
+console.log(`Tempo de cozimento:    ${checkTime} minutos`);
+console.log(`Tempo total de espera: ${totalTime} minutos`);
+console.log(`Iterações necessarias: ${count}\n`);
